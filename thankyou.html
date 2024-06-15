@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Purchasing</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* CSS animation for fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9); /* Initial scale */
+            }
+            to {
+                opacity: 1;
+                transform: scale(1); /* Final scale */
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Gradient background for the entire page */
+        body {
+            background: linear-gradient(to right, #66ccff, #dadada); /* Gradient background */
+            min-height: 20vh; /* Reduced height to 80% of viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333; /* Dark text color for contrast */
+            font-family: Arial, sans-serif; /* Example font family */
+        }
+
+        /* Additional emphasis styles */
+        .container {
+            max-width: 600px; /* Limit container width for better readability */
+            padding: 10px;
+            text-align: center; /* Center align content */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+        }
+
+        .thank-you-message {
+            font-size: 2.5rem; /* Larger font size for emphasis */
+            color: #fff; /* Light text color for emphasis */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for emphasis */
+            margin-bottom: 20px; /* Increased margin bottom for separation */
+            background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .order-details {
+            background-color: #f8f9fa; /* Light background for order details */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            margin-bottom: 20px; /* Increased margin bottom for separation */
+            color: #333; /* Dark text color for contrast */
+        }
+
+        .order-details li {
+            list-style: none; /* Remove default list styles */
+            margin-bottom: 5px; /* Spacing between list items */
+        }
+
+        .btn-primary {
+            transition: all 0.3s ease; /* Smooth transition for button */
+            background: linear-gradient(to right, #FFD700, #FF6347); /* Gradient background */
+            border: none;
+            color: #fff; /* Light text color for contrast */
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05); /* Slightly larger scale on hover for emphasis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hover box shadow for depth */
+        }
+    </style>
+</head>
+<body>
+    <div class="container fade-in">
+        <img src="img/stg/logo.png" alt="Sri Takshashila Gurukul Logo" class="img-fluid" >
+        <h1 class="thank-you-message mt-4">Thank You for Your Purchase!</h1>
+        <p class="lead">We appreciate your business with Sri Takshashila Gurukul.</p>
+        <div class="order-details">
+            <p>Your order details:</p>
+            <ul>
+                <li>Order Number: #123456</li>
+                <li>Product: Product Name</li>
+                <li>Total Amount: $100.00</li>
+                <!-- Add more details as per your actual purchase flow -->
+            </ul>
+        </div>
+        <p>We will send you a confirmation email shortly.</p>
+        <p>For any inquiries, please contact <a href="mailto:info@sritakshashila.com">info@sritakshashila.com</a>.</p>
+        <a href="index.html" class="btn btn-primary">Back to Homepage</a>
+    </div>
+
+    <!-- JavaScript libraries if needed -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Additional scripts as needed -->
+</body>
+</html>
